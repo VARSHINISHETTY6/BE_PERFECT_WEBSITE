@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Be calm. Be bendy. Be Patanjali.</h1>
+
+    <h2>Select Your Asana(s)</h2>
+    <div class="asana-grid">
+      <div class="asana-box" onclick="selectAsana('Tadasana')">
+        <img src="img\thadasana.jpg" alt="Tadasana" />
+        <p>Tadasana</p>
+      </div>
+      <div class="asana-box" onclick="selectAsana('Vrikshasana')">
+        <img src="img\vrishka.jpg" alt="Vrikshasana" />
+        <p>Vrikshasana</p>
+      </div>
+      <div class="asana-box" onclick="selectAsana('Bhujangasana')">
+        <img src="img\bhujanga.jpg" alt="Bhujangasana" />
+        <p>Bhujangasana</p>
+      </div>
+      <div class="asana-box" onclick="selectAsana('Trikonasana')">
+        <img src="img\trikona.jpg" alt="Trikonasana" />
+        <p>Trikonasana</p>
+      </div>
+    </div>
+
+    <h2>Selected Asana</h2>
+    <p id="selected-asana">None</p>
+    <button onclick="startAsanaTimer()">Start 5-Minute Timer</button>
+    <button onclick="stopAsanaTimer()">Stop Timer</button>
+    <p id="asana-timer">05:00</p>
+  </div>
+
+  <script src="yoga.js"></script>
+</body>
+</html>

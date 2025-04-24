@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Eat good, feel good, glow better.</h1>
+
+    <h2>Choose a Vegetable or Fruit</h2>
+    <div class="asana-grid">
+      <div class="asana-box" onclick="showBenefits('Carrot')">
+        <img src="img\carrot.jpg" alt="Carrot" />
+        <p>Carrot</p>
+      </div>
+      <div class="asana-box" onclick="showBenefits('Spinach')">
+        <img src="img\spinach.jpg" alt="Spinach" />
+        <p>Spinach</p>
+      </div>
+      <div class="asana-box" onclick="showBenefits('Broccoli')">
+        <img src="img\brocoli.jpg" alt="Broccoli" />
+        <p>Broccoli</p>
+      </div>
+      <div class="asana-box" onclick="showBenefits('Blueberry')">
+        <img src="img\blueberry.jpg" alt="Blueberry" />
+        <p>Blueberry</p>
+      </div>
+      <div class="asana-box" onclick="showBenefits('Apple')">
+        <img src="img\apples.jpg" alt="Apple" />
+        <p>Apple</p>
+      </div>
+    </div>
+
+    <h2>Health Benefits</h2>
+    <p id="health-benefits">Click on a vegetable or fruit to see its health benefits!</p>
+  </div>
+
+  <script src="health.js"></script>
+</body>
+</html>

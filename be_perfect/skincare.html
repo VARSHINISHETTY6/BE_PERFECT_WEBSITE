@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skincare Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mirror, mirror… you’re glowing, girl!</h1>
+
+    <h2>Choose a Recipe or Face Mask</h2>
+    <div class="asana-grid">
+      <div class="asana-box" onclick="showRecipe('ABC Juice')">
+        <img src="img\abc.jpg" alt="ABC Juice" />
+        <p>ABC Juice</p>
+      </div>
+      <div class="asana-box" onclick="showRecipe('Carrot Face Mask')">
+        <img src="img\carrot_mask.jpg" alt="Carrot Face Mask" />
+        <p>Carrot Face Mask</p>
+      </div>
+      <div class="asana-box" onclick="showRecipe('Cucumber Face Mask')">
+        <img src="img\cucumber.jpg" alt="Cucumber Face Mask" />
+        <p>Cucumber Face Mask</p>
+      </div>
+      <div class="asana-box" onclick="showRecipe('Aloe Vera Juice')">
+        <img src="img\aloe.jpg" alt="Aloe Vera Juice" />
+        <p>Aloe Vera Juice</p>
+      </div>
+      <div class="asana-box" onclick="showRecipe('Mint Face Mask')">
+        <img src="img\mint.jpg" alt="Mint Face Mask" />
+        <p>Mint Face Mask</p>
+      </div>
+    </div>
+
+    <h2>Recipe</h2>
+    <p id="recipe-display">Click on a box to see the recipe!</p>
+  </div>
+
+  <script src="skincare.js"></script>
+</body>
+</html>

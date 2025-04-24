@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Strong today, stronger tomorrow</h1>
+
+    <h2>Select Your Exercise</h2>
+    <div class="asana-grid">
+      <!-- 15 Exercises (use your actual image paths) -->
+      <div class="asana-box" onclick="selectExercise('Push-ups')">
+        <img src="img\pushups.jpg" alt="Push-ups" />
+        <p>Push-ups</p>
+      </div>
+      <div class="asana-box" onclick="selectExercise('Plank')">
+        <img src="img\images (5).jpg" alt="Plank" />
+        <p>Plank</p>
+      </div>
+      <div class="asana-box" onclick="selectExercise('Mountain Climbers')">
+        <img src="img\download (8).jpg" alt="Mountain Climbers" />
+        <p>Mountain Climbers</p>
+      </div>
+      <div class="asana-box" onclick="selectExercise('High Knees')">
+        <img src="img\download (9).jpg" alt="High Knees" />
+        <p>High Knees</p>
+      </div>
+      <div class="asana-box" onclick="selectExercise('Leg Raises')">
+        <img src="img\download (10).jpg" alt="Leg Raises" />
+        <p>Leg Raises</p>
+      </div>
+    </div>
+
+    <h2>Selected Exercise</h2>
+    <p id="selected-exercise">None</p>
+    <button onclick="startExerciseTimer()">Start 5-Minute Timer</button>
+    <button onclick="stopExerciseTimer()">Stop Timer</button>
+    <p id="exercise-timer">05:00</p>
+  </div>
+
+  <script src="exercise.js"></script>
+</body>
+</html>
